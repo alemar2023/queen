@@ -1,0 +1,118 @@
+<h1 class="text-black text-center">Home</h1>
+<div data-controller="hello"></div>
+
+<p>data controller text</p>
+
+<br>
+<div class="card" style="width: 20rem">
+  <div class="card-body p-1">
+    <div class="pane border-bottom p-3">
+      <div style="height:60px !important;">
+        <img class="pane-img pane-sm " src="<%= image_path('img-face-mobile.png') %>" />
+        <p class="card-text m-0 ms-3">techlead</p>
+        <div class="dropdown ms-auto">
+          <button
+            class="btn btn-white btn-flat me-0"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="text-dark fa fa-ellipsis-h"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+              <span class="dropdown-item disabled" href="#">Edit Profile</span>
+            </li>
+            <li><span class="dropdown-item divider" href="#"></span></li>
+            <li><span class="dropdown-item" href="#">Action 1</span></li>
+            <li><span class="dropdown-item" href="#">Action 2</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <img class="card-img img-fluid rounded-0 my-3" src="<%= image_path('forest.png') %>" />
+    <div class="mx-2 mb-4">
+      <h2 class="card-title">A Dummy blog title sample</h2>
+      <p class="card-text text-muted mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo
+      </p>
+      <div>
+        <button class="btn btn-dark py-1 px-2"><i class="fa fa-arrow-up ps-0"></i> 11</button>
+        <button class="btn btn-dark py-1 px-2">
+          <i class="fa fa-arrow-down ps-0"></i>
+          2
+        </button>
+      </div>
+      <div class="my-2">
+        <button flat class="p-0 btn btn-flat">
+          <i class="fa fa-comments"></i>
+          21.4k
+        </button>
+        <button class="p-0 btn btn-flat">
+          <i class="fa fa-share"></i>
+          Share
+        </button>
+        <button class="btn btn-warning text-dark py-1">
+          <i class="fa fa-save"> <%= link_to "learn more", "javascript:void(0)" %></i>
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" >
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+</script>

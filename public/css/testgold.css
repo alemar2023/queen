@@ -1,0 +1,382 @@
+main.is-striped section:nth-of-type(even) {
+    background-color: rgba(0,0,0,0);
+    color: #fff
+}
+
+main.is-striped section:first-child {
+    background-color: rgba(0,0,0,0) !important;
+    border-bottom: none
+}
+
+main.is-striped section:nth-of-type(odd) {
+    background-color: #fff;
+    color: #012169
+}
+
+video#bg-video {
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("/img/9fa1d526ffaf8a4ec135c278c0bbb6de/public/videos/Cardmarket_BGStill.jpg") no-repeat;
+    background-size: cover
+}
+
+#backToTop {
+    color: #dfc463 !important;
+    border-color: #dfc463 !important
+}
+
+#cm-masthead {
+    background: radial-gradient(ellipse at center, rgba(1,33,105,0.1) 0%, rgba(1,33,105,0.7) 100%);
+    padding: 3rem 0;
+    overflow-x: hidden
+}
+
+#section-branding {
+    padding-bottom: 1.5rem
+}
+
+    #section-branding .text-muted-light {
+        line-height: 1.25
+    }
+
+.jumbotron {
+    padding-top: 5rem !important;
+    margin-bottom: 0
+}
+
+.slogan {
+    margin: 0.5rem 0 1rem;
+    line-height: 1.15 !important
+}
+
+@media (min-width: 1200px) {
+    .slogan {
+        margin: 0.5rem 2.75rem 1rem
+    }
+}
+
+#game-picker-info {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0;
+    z-index: 20
+}
+
+    #game-picker-info:after {
+        content: '';
+        position: absolute;
+        bottom: -47px;
+        left: 0;
+        right: 0;
+        margin: auto !important;
+        width: 0;
+        height: 0;
+        border-width: 20px;
+        border-bottom-width: 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,0);
+        border-top-color: #dfc463
+    }
+
+@media (min-width: 768px) {
+    #game-picker-info:after {
+        bottom: -75px;
+        border-width: 30px;
+        border-bottom-width: 0
+    }
+}
+
+#game-picker-info span {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-shadow: none;
+    border-radius: 3px;
+    border: 2px solid #dfc463;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.2)
+}
+
+@media (min-width: 576px) {
+    #game-picker-info span {
+        font-size: 0.9rem
+    }
+}
+
+@media (min-width: 768px) {
+    #game-picker-info span {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+        border-width: 3px
+    }
+}
+
+.modal-dialog {
+    max-width: 100%
+}
+
+a.sprite-link {
+    display: block;
+    background-color: rgba(1,33,105,0.1)
+}
+
+    a.sprite-link:hover {
+        background-color: rgba(255, 145, 2, 0.3)
+    }
+
+.game-sprite {
+    -webkit-transform: translateX(-50%) scale(.25);
+    transform: translateX(-50%) scale(.25);
+    -moz-transform-origin: center;
+    margin-left: 50%
+}
+
+@media (min-width: 576px) {
+    .game-sprite {
+        -webkit-transform: translateX(-50%) scale(.3);
+        transform: translateX(-50%) scale(.3);
+        -moz-transform-origin: center;
+        margin-left: 50%
+    }
+}
+
+@media (min-width: 992px) {
+    .game-sprite {
+        -webkit-transform: translateX(-50%) scale(.4);
+        transform: translateX(-50%) scale(.4);
+        -moz-transform-origin: center;
+        margin-left: 50%
+    }
+}
+
+@media (min-width: 1200px) {
+    .game-sprite {
+        -webkit-transform: translateX(-50%) scale(.5);
+        transform: translateX(-50%) scale(.5);
+        -moz-transform-origin: center;
+        margin-left: 50%
+    }
+}
+
+#section-how-to {
+    position: relative;
+    height: auto
+}
+
+.advantage-icons {
+    font-size: 48px;
+    margin-right: 15px
+}
+
+@media (min-width: 576px) {
+    .advantage-icons {
+        font-size: 64px;
+        margin-right: 0
+    }
+}
+
+#section-advantages {
+    height: auto;
+    background-color: rgba(1,33,105,0.7);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5)
+}
+
+    #section-advantages h2 {
+        display: inline-block;
+        color: #fff
+    }
+
+@media (min-width: 576px) {
+    #section-advantages h2 {
+        display: block;
+        margin-top: 0.25rem
+    }
+}
+
+@media (max-width: 575.98px) {
+    #section-advantages h2 {
+        margin: 0;
+        vertical-align: middle !important
+    }
+}
+
+#section-advantages .text-muted-light {
+    line-height: 1.25
+}
+
+.fact-icons {
+    position: relative;
+    width: 100%;
+    font-size: 5rem;
+    color: #e0e9ff
+}
+
+@media (min-width: 576px) {
+    .fact-icons {
+        font-size: 6rem
+    }
+}
+
+@media (min-width: 992px) {
+    .fact-icons {
+        font-size: 8rem
+    }
+}
+
+#section-facts {
+    height: auto
+}
+
+    #section-facts h2, #section-facts p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-shadow: 1px 0px 1px rgba(233,236,239,0.8),0px 1px 1px rgba(206,212,218,0.8)
+    }
+
+    #section-facts h2 {
+        top: 30%
+    }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #section-facts h2 {
+        top: 28%
+    }
+}
+
+#section-facts p {
+    top: 50%
+}
+
+@media (min-width: 576px) {
+    #section-facts p {
+        font-size: 1.25rem
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #section-facts p {
+        top: 52%
+    }
+}
+
+#section-action {
+    background-color: rgba(1,33,105,0.7)
+}
+
+    #section-action h2 {
+        border: none
+    }
+
+@media (max-width: 991.98px) {
+    #section-action a {
+        padding: 0.5rem 1rem;
+        padding-right: 2.5rem;
+        font-size: 1rem
+    }
+}
+
+.action-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+@media (min-width: 576px) {
+    .action-text {
+        font-size: 2rem
+    }
+}
+
+@media (min-width: 992px) {
+    .action-text {
+        font-size: 2.5rem
+    }
+}
+
+.hvr-icon-wobble-vertical, .hvr-hang {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent
+}
+
+.hvr-icon-wobble-vertical {
+    position: relative;
+    padding-right: 2.5em;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s
+}
+
+    .hvr-icon-wobble-vertical:before {
+        position: absolute;
+        right: 1em;
+        padding: 0 1px;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        content: "";
+        font-family: 'skmfont' !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        speak: none;
+        text-transform: none;
+        line-height: 1;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.5rem
+    }
+
+    .hvr-icon-wobble-vertical:hover:before, .hvr-icon-wobble-vertical:focus:before, .hvr-icon-wobble-vertical:active:before {
+        -webkit-animation-name: hvr-wobble-vertical;
+        animation-name: hvr-wobble-vertical;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1
+    }
+
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+    -webkit-animation-name: hvr-hang-sink,hvr-hang;
+    animation-name: hvr-hang-sink,hvr-hang;
+    -webkit-animation-duration: .3s,1.5s;
+    animation-duration: .3s,1.5s;
+    -webkit-animation-delay: 0s,.3s;
+    animation-delay: 0s,.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate
+}
+
+.hvr-hang:hover {
+    -webkit-animation: none;
+    animation: none
+}

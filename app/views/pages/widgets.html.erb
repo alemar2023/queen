@@ -1,0 +1,76 @@
+<h1 class="text-black text-center">Widgets</h1>
+<div style="display:grid;grid-template-columns: auto auto">
+
+<div class="card" style="width: 20rem">
+  <div class="card-body p-1">
+    <div class="pane border-bottom p-3">
+      <div style="height:60px !important;">
+      <img class="pane-img pane-sm " src="<%= image_path('img-face-mobile.png') %>" />
+      <p class="card-text m-0 ms-3">techlead</p>
+      <div class="dropdown ms-auto">
+        <button
+          class="btn btn-white btn-flat me-0"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="text-dark fa fa-ellipsis-h"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+            <span class="dropdown-item disabled" href="#">Edit Profile</span>
+          </li>
+          <li><span class="dropdown-item divider" href="#"></span></li>
+          <li><span class="dropdown-item" href="#">Action 1</span></li>
+          <li><span class="dropdown-item" href="#">Action 2</span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <img class="card-img img-fluid rounded-0 my-3" src="<%= image_path('forest.png') %>" />
+    <div class="mx-2 mb-4">
+      <h2 class="card-title">A Dummy blog title sample</h2>
+      <p class="card-text text-muted mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo
+      </p>
+      <div>
+        <button class="btn btn-dark py-1 px-2"><i class="fa fa-arrow-up ps-0"></i> 11</button>
+        <button class="btn btn-dark py-1 px-2">
+          <i class="fa fa-arrow-down ps-0"></i>
+          2
+        </button>
+      </div>
+      <div class="my-2">
+        <button flat class="p-0 btn btn-flat">
+          <i class="fa fa-comments"></i>
+          21.4k
+        </button>
+        <button class="p-0 btn btn-flat">
+          <i class="fa fa-share"></i>
+          Share
+        </button>
+        <button class="btn btn-warning text-dark py-1">
+          <i class="fa fa-save"></i>
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="width: 25rem">
+  <img class="img-fluid card-img" src="<%= image_path('117310488_16.jpg') %>" style="width: 100%" />
+  <div class="card-body">
+    <div class="card-title">Basic</div>
+    <div class="card-text">
+      This is just a card text Get important notifications about you or activity you've missed
+    </div>
+    <div class="d-flex pt-3 pb-3">
+      <button class="btn btn-primary">Button</button>
+    </div>
+  </div>
+</div>
+</div>

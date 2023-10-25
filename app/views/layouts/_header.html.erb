@@ -1,0 +1,45 @@
+
+
+<div class="container-fluid p-0">
+  <nav class="navbar  navbar-expand-lg bg-light  fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+
+        <img src="<%= image_path('aigradinga.png') %>" style="width:120px;" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item  "> <%= link_to "Users", users_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Cards", cards_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Forms", forms_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Grid", grids_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Tab", tabs_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Widget", widgets_path , class: "nav-link" %>  </li>
+          <li class="nav-item  "> <%= link_to "Collapse", collapse_path , class: "nav-link" %>  </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><%= link_to "About", about_path , class: "nav-link" %></a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+        <form class="">
+          <a class="btn btn-outline-primary mr-2" href="#">Login</a>
+          <a class="btn btn-outline-success" href="#">Become member</a>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+</div>

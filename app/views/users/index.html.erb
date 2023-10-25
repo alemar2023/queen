@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users" class="row">
+  <table>
+    <tr>
+      <td> <strong>Name:</strong> </td>
+      <td> <strong>Email:</strong> </td>
+      <td> <strong>Adress:</strong> </td>
+      <td> <strong>Contact:</strong> </td>
+      <td> <strong>Action:</strong> </td>
+
+
+    </tr>
+  <% @users.each do |user| %>
+      <tr><td> <%= user.name %></td>
+        <td> <%= user.email %></td>
+        <td> <%= user.adress %></td>
+        <td> <%= user.contact %></td>
+        <td>  <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        </td><td>
+      <%= link_to "Show this user", user %>
+      </td></tr>
+
+  <% end %>
+  </table>
+
+<%= link_to "New user", new_user_path %>
+</div>
